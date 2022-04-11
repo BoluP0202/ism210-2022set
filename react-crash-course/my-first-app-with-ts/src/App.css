@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -35,4 +35,28 @@
   to {
     transform: rotate(360deg);
   }
-}
+}*/
+.Container{
+  display: flex;
+ }
+ .Container > div {
+  border: 1px solid #ccc;
+  padding: 10px;
+ }
+ .Column1, .Column2, .Column3 {
+  flex: 1;
+ }
+ .Column1 {
+  background-color: #ccc;
+ }
+ .Column2 {
+  background-color: #ddd;
+ }
+ .Column3 {
+  background-color: #eee;
+ }
+ @media (max-width: 768px){
+  .Container{
+  flex-direction: column;
+  }
+ }

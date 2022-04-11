@@ -1,7 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import HelloWorld from "./components/HelloWorld";
+import HelloWorld2 from "./components/HelloWorld2";
+//import logo from './logo.svg';
+//import './App.css';
 
-function App() {
+/*function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -20,6 +23,15 @@ function App() {
       </header>
     </div>
   );
+}*/
+const App = () => {
+  return (
+    <div>
+      <HelloWorld />
+      <HelloWorld2 name="Bolu" />
+    </div>
+  )
 }
+
 
 export default App;
